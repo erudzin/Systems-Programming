@@ -1,0 +1,20 @@
+./mtsieve -s100 -e200000000 -t1 : 0m3.315s
+
+./mtsieve -s100 -e200000000 -t2 : 0m2.053s
+
+./mtsieve -s100 -e200000000 -t3 : 0m1.728s
+
+./mtsieve -s100 -e200000000 -t4 : 0m1.617s
+
+./mtsieve -s100 -e200000000 -t5 : 0m1.585s
+
+./mtsieve -s100 -e200000000 -t6 : 0m1.492s
+
+./mtsieve -s100 -e200000000 -t7 : 0m1.507s
+
+./mtsieve -s100 -e200000000 -t8 : 0m1.493s
+
+We tested the run times on Eric's Intel i7 9750H @ 2.60 GHz. We noticed that the time does
+not scale linearly with the amount of threads. The time decreases as more threads
+are used, meaning the speed improves. Although the speed improves, the time seems
+to plateau after 5 threads, not making much of a difference.
